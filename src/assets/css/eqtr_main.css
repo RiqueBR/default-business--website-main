@@ -1,0 +1,308 @@
+﻿/*
+
+File:		eqtr_main.css
+Created:	***DATE HERE***
+Author:		***NAME HERE***	
+
+Notes:
+
+
+*/
+
+/* Default styles */
+
+/* Global variables */
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+}
+
+
+* {
+  margin: 0; 
+  padding: 0; 
+  border: 0; 
+}
+
+body {
+  font: 62.5%/1.5  "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif;
+  color: var(--color-black);
+  text-align:center;
+}
+
+h1 {
+  font-size: 2.2em; 
+}
+
+h2{ 
+  font-size: 2.0em;
+}
+
+h3 {
+  font-size: 1.8em; 
+}
+
+h4{
+  font-size: 1.6em;
+}
+
+h5 {
+  font-size: 1.4em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+li {
+  list-style: none;
+}
+
+
+header {
+  /* background: url("../images/wallpaper__header.jpg") no-repeat; */
+  background-size: cover;
+  display: block;
+  min-height: 100%;
+  color: var(--color-black)
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navigation-item {
+  list-style: none;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.logo {
+  font-size: 2.0em;
+  margin-left: 1.5rem;
+}
+
+.book-meeting-bttn {
+  background: transparent;
+  border: 2px solid var(--color-black);
+  border-radius: 6px;
+  padding: 0.5rem;
+  color: var(--color-black);
+}
+
+.menu-burger {
+  background: transparent;
+}
+
+/* Header content */
+
+.title-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1.5rem 1.5rem;
+}
+
+.banner-title {
+  margin-bottom: 0.25rem;
+}
+
+.banner-subheader {
+  width: 30%;
+  text-align: start;
+}
+
+/* Main content */
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+select {
+  padding: 0.25rem;
+  width: 12rem;
+  margin: 1.5rem 1.5rem;
+  border: solid 1.5px var(--color-black);
+  border-radius: 6px;
+  font-size: 1.3rem;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: url("../images/icons/Chevron.svg") no-repeat;
+  background-position: right 5px top 50%;
+  background-color: #fff;
+}
+
+.grid-section {
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+}
+
+.card--grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  grid-gap: 1rem;
+  margin: 1rem 1.5rem;
+}
+
+.card--item {
+  list-style: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+  height: 18rem;
+  width: 18rem;
+}
+
+.card--tag {
+  border: solid 2px gray;
+  border-radius: 6px;
+  padding: 0.1rem 0.5rem;
+  margin-left: 0.5rem;
+  margin-top: 6rem;
+}
+
+.card--title {
+  margin-left: 0.5rem;
+}
+.card--description {
+  text-align: start;
+  margin-left: 0.5rem;
+}
+.card--more-info{
+  display: flex;
+  flex-direction: row;
+  margin-left: 0.5rem;
+}
+
+.card--see-more {
+  margin-right: 0.5rem;
+}
+
+.book-meeting-bttn--main {
+  background: #7E7E7E;
+  border-radius: 4px;
+  padding: 0.5rem;
+  color: var(--color-white);
+  width: 8rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.grid--footer {
+  margin-top: 2.5rem;
+}
+
+.video-content-section {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  align-items: center;
+  margin: 1.5rem 1.5rem;
+}
+
+.section-title {
+  padding-bottom: 1rem;
+}
+
+.company-video--img {
+  max-width: 90rem;
+  max-height: 60%;
+}
+
+.section-main-content {
+  max-width: 50%;
+  margin-bottom: 4rem;
+}
+
+
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.play-icon {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
+
+/* Footer */
+
+footer {
+  background-color: var(--color-black);
+}
+
+.custom-item--white {
+  color: var(--color-white);
+}
+
+.custom-item--white:first-child {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+} 
+
+.footer-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-navigation--group-item {
+  margin: 1.5rem 1.5rem;
+}
+
+li.footer-navigation-item {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+div.subscribe-wrapper {
+  text-align: start;
+}
+
+.footer-navigation-item--header {
+  color: var(--color-white);
+  font-size: 1.5rem;
+}
+
+.footer-navigation-item--subheader {
+  color: var(--color-white);
+  margin-bottom: 2rem;
+}
+
+.custom-textbox {
+  border: 1px solid var(--color-white);
+  border-radius: 3px;
+  height: 2rem;
+  width: 20rem;
+}
+
+.subscribe-bttn {
+  background: transparent;
+  border: 2px solid var(--color-white);
+  border-radius: 3px;
+  padding: 0.5rem;
+  color: var(--color-white);
+}
